@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+div#main {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+}
+
+label.switch input {
+    display: none;
+}
+
+label.switch>span {
+    display: inline-block;
+    width: 120px;
+    background: rgb(183, 199, 194);
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    border: 1px solid rgba(128, 255, 212, 0.9);
+}
+
+label.switch>span>span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 3px;
+}
+
+label.switch>input:checked+span>span {
+    right: 3px;
+    left: auto;
+}
+
+label.switch>input:checked+span {
+    background-color: rgb(128, 255, 212);
+}
+
+div#tab>h1 {
+    text-align: center;
+    background-color: rgb(0, 229, 255);
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0px 0px 10px rgb(15, 100, 220);
+}
+
+div#tab {
+    border: 1px solid black;
+}
+
+div#tab>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#tab-times {
+    background-color: rgb(116, 228, 228);
+    width: 20%;
+}
+
+div#tab-times label {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px dotted yellow;
+}
+
+div#tab-times label:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+div#content {
+    width: 80%;
+    padding: 30px;
+}
+
+div#content input {
+    display: none;
+}
+
+div#content div {
+    display: none;
+}
+
+div#content>div span:first-child {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+div#content>div span:last-child {
+    display: block;
+    text-align: justify;
+    font-size: 20px;
+}
+
+div#content input:checked+div {
+    display: block;
+}
+
+div#botton {
+    width: 150px;
+    margin: 5px auto;
+}
+
+div#botton>button:hover {
+    cursor: pointer;
+}
+
+div#botton button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    justify-content: space-between;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div#botton button:first-child {
+    background-color: rgb(255, 112, 19);
+    border: 1px solid rgba(255, 112, 19, 0.9);
+    border-radius: 25px;
+}
+
+div#botton button:nth-child(2) {
+    background-color: rgb(0, 178, 213);
+    border: 1px solid rgba(0, 178, 213, 0.9);
+    border-radius: 25px;
+}
+
+div#botton button:last-child {
+    background-color: rgb(115, 116, 120);
+    border: 1px solid rgb(115, 116, 120, 0.9);
+    border-radius: 25px;
+}
+
+div#botton button span:first-child {
+    position: absolute;
+    top: 35%;
+    left: 1px;
+    text-align: center;
+    width: 70%;
+}
+
+div#botton button span:last-child {
+    position: absolute;
+    top: 4%;
+    right: 4px;
+    height: 45px;
+    width: 30%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 45px;
+}

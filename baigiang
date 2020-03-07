@@ -1,0 +1,28 @@
+- slider
+- tab 
+- checkbox
+- input 
+- list-group
+- menu
+
+
+Media query:
+- css selector theo thiết bị 
+- thiết kế web responsive
+- break point (điểm phá vỡ)
+    + màn hình rất lớn > 1200px
+    + màn hình desktop: 960px
+    + màn hình medium mobile: 768px
+    + màn hình rất nhỏ: < 500px
+
+có 2 cách viết: 
+    + mobile first: max-width tăng dần
+    + desktop first: min-width giảm dần
+@media [loại mà hình] and [điều kiện]
+@media screen|all and (max-width: 1200px | min-width:1200px)
+
+
+Bài tập: 
++ làm lại switch
++ làm lại tab 
++ làm button
